@@ -35,3 +35,6 @@ buildNumber.properties
 
 .idea/
 
+*.txt
+*.png
+
