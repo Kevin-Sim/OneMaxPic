@@ -37,4 +37,6 @@ buildNumber.properties
 
 *.txt
 *.png
+*.ind
+
 
