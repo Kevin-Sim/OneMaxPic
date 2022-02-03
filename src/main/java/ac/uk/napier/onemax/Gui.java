@@ -318,7 +318,8 @@ public class Gui extends JFrame implements Observer {
 			public void actionPerformed(ActionEvent arg0) {
 				System.out.println(comboBox.getSelectedItem());
 				try {
-					Parameters.getInstance().algorithmClass = Class.forName((String) comboBox.getSelectedItem());
+					String name = "ac.uk.napier.onemax." + (String) comboBox.getSelectedItem();
+					Parameters.getInstance().algorithmClass = Class.forName(name);
 				} catch (ClassNotFoundException e) {
 					e.printStackTrace();
 				}
